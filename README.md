@@ -48,5 +48,5 @@ yarn test
 ## Todo
 
 - Clean up package.json (done)
-- Cypress + Jest (Cypress added, just jest to do)
+- Cypress + Jest (done)
 - Fix bug where it shows children if no parents (done)
