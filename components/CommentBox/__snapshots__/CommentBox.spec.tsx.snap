@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CommentBox renders a CommentBox 1`] = `
+<div>
+  <div
+    class="border border-gray-300 rounded-lg p-4 w-sm"
+    data-testid="comment-box"
+  >
+    <time
+      class="text-xs text-right block"
+      data-testid="comment-box-date"
+      datetime="2025-05-01T14:00:00.000Z"
+    >
+      today at 3:00 PM
+    </time>
+    <p
+      class="min-h-8"
+      data-testid="comment-box-text"
+    >
+      This is a test
+    </p>
+    <ul
+      class="flex space-x-2 justify-end"
+      data-testid="comment-box-actions"
+    >
+      <li>
+        <button
+          class="hover:cursor-pointer p-2 rounded bg-blue-700 hover:bg-blue-800 text-white focus:ring-4 focus:outline-none focus:ring-blue-300 text-xs rounded"
+          data-testid="comment-box-actions-reply"
+          type="button"
+        >
+          <img
+            alt="Reply to this comment"
+            class="h-4 w-4"
+            data-nimg="1"
+            decoding="async"
+            height="200"
+            loading="lazy"
+            src="/reply.svg"
+            style="color: transparent;"
+            tabindex="1"
+            title="Reply to this comment"
+            width="200"
+          />
+        </button>
+      </li>
+      <li>
+        <button
+          class="hover:cursor-pointer p-2 rounded bg-blue-700 hover:bg-blue-800 text-white focus:ring-4 focus:outline-none focus:ring-blue-300 text-xs rounded"
+          data-testid="comment-box-actions-delete"
+          type="button"
+        >
+          <img
+            alt="Delete this comment"
+            class="h-4 w-4"
+            data-nimg="1"
+            decoding="async"
+            height="200"
+            loading="lazy"
+            src="/delete.svg"
+            style="color: transparent;"
+            tabindex="2"
+            title="Delete this comment"
+            width="200"
+          />
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>
+`;

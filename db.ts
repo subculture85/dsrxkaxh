@@ -1,6 +1,6 @@
 import Dexie, { type EntityTable } from 'dexie'
 
-type CommentStatus = 'published' | 'deleted' | 'draft' | 'pinned'
+type CommentStatus = 'published' | 'deleted'
 
 interface Comment {
   id: string

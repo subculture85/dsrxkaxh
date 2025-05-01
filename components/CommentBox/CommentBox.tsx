@@ -18,7 +18,6 @@ export const CommentBox: FC<CommentProps> = ({
   text,
   dstamp,
   id,
-  status,
   replies,
   testId = 'comment-box'
 }) => {
@@ -27,9 +26,7 @@ export const CommentBox: FC<CommentProps> = ({
 
   return (
     <div
-      className={clsx('border border-gray-300 rounded-lg p-4 w-sm', {
-        'bg-red': status === 'draft'
-      })}
+      className='border border-gray-300 rounded-lg p-4 w-sm'
       data-testid={testId}
     >
       <time

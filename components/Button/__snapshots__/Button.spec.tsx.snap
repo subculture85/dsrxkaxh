@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button renders a button 1`] = `
+<div>
+  <button
+    class="hover:cursor-pointer p-2 rounded bg-blue-700 hover:bg-blue-800 text-white focus:ring-4 focus:outline-none focus:ring-blue-300 text-xs rounded"
+    data-testid="button"
+    type="button"
+  />
+</div>
+`;
+
+exports[`Button renders a button with children 1`] = `
+<div>
+  <button
+    class="hover:cursor-pointer p-2 rounded bg-blue-700 hover:bg-blue-800 text-white focus:ring-4 focus:outline-none focus:ring-blue-300 text-xs rounded"
+    data-testid="button"
+    type="button"
+  >
+    Content
+  </button>
+</div>
+`;
