@@ -3,7 +3,7 @@
 exports[`CommentBox renders a CommentBox 1`] = `
 <div>
   <div
-    class="border border-gray-300 rounded-lg p-4 w-sm"
+    class="border border-gray-300 rounded-lg p-4 w-xs sm:w-sm"
     data-testid="comment-box"
   >
     <time

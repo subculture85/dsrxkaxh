@@ -15,7 +15,7 @@ export const List: FC = () => {
     ) || []
 
   return (
-    <ul className='flex gap-4 flex-wrap'>
+    <ul className='flex gap-4 flex-nowrap sm:flex-wrap flex-col sm:flex-row justify-center items-center sm:items-start sm:justify-start'>
       {comments.map((comment) => (
         <CommentBox key={`comment-${comment.id}`} {...comment} />
       ))}

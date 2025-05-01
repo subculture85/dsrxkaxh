@@ -26,7 +26,7 @@ export const CommentBox: FC<CommentProps> = ({
 
   return (
     <div
-      className='border border-gray-300 rounded-lg p-4 w-sm'
+      className='border border-gray-300 rounded-lg p-4 w-xs sm:w-sm'
       data-testid={testId}
     >
       <time
