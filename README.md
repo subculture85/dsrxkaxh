@@ -1,5 +1,9 @@
 The Comment Store - Tech Test
 
+## Deployment
+
+Deployed at https://dsrxkaxh.vercel.app/
+
 ## Getting Started
 
 To run the app, build and then start it with:
