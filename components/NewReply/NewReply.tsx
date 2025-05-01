@@ -16,7 +16,7 @@ export const NewReply: FC<NewReplyProps> = ({ id, onCancel }) => {
   }
 
   return (
-    <form className='min-w-xs'>
+    <form className='w-full sm:min-w-xs'>
       <label
         htmlFor='comment-input'
         className='mb-2 text-sm font-medium text-gray-900 sr-only'
