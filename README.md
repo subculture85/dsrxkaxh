@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+The Comment Store - Tech Test
 
 ## Getting Started
 
-First, run the development server:
+To run the app, build and then start it with:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+yarn build
+yarn start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To run the Cypress tests, run:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+yarn e2e
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+...then select E2E testing on the pop up window, select Chrome, and then click on the spec test to run.
 
-## Learn More
+## Decisions
 
-To learn more about Next.js, take a look at the following resources:
+- I did consider using RxDB but I think it would be overkill for the tech test and I haven't used it in anger before, so it would take up more of the test time
+- Given the brief, I decided that I would only account for a single level of replies
+- I've used Tailwind to help accelarate the UI design without having to write a lot of CSS
+- Pagination not necessary at the moment given the scope of the test, so I've not included it
+- Due to the time constraints, I decided to add a few tests of the more important pieces as an example
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Further developments
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Sync to an external DB
+- Set the comments to deleted if the parent is deleted
+- UI updates for better accessibility
+- Do something useful with the console.log errors, I'd feed it into something like Sentry
+- Limit the number of returned values / consider pagination
 
-## Deploy on Vercel
+## Todo
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Clean up package.json (done)
+- Cypress + Jest (Cypress added, just jest to do)
+- Fix bug where it shows children if no parents (done)

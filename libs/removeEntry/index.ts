@@ -1,0 +1,1 @@
+export { removeEntry } from './removeEntry'
